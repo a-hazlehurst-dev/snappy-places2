@@ -1,0 +1,25 @@
+
+.textSearchLarge{
+    height: 60px;
+    font-size: xx-large;
+}
+
+.notFoundTextFound
+{
+    font-size: x-large;
+    color: darkslategrey;
+    font-weight: 500px;
+}
+
+.spacer-10
+{
+    padding-top:10px;
+}
+
+.box
+{
+   
+    margin-top: 5px;
+    height:100px;
+}
+
