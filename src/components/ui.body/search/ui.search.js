@@ -19,7 +19,7 @@ class LocationSearchInput extends Component{
 
     updateInputValue = (query) =>{
 
-        axios.get('http://35.178.8.93:8001/api/v1/place/' + query)
+        axios.get('//35.178.8.93:8001/api/v1/place/' + query)
         .then(response => { 
             this.setState({options: response.data});
          });
