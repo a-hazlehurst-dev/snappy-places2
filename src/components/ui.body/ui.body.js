@@ -126,6 +126,7 @@ class AppBody extends React.Component{
                         <Map 
                             zoom={12}
                             markers = {this.state.markers}
+                            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv1TJmGi-CLd18lqfY30-qM-B37KnJ7v0"
                             center={this.state.center}
                             defaultCenter={{lat:40.728,lng: -73.089}}
                             containerElement={<div style={{height:100+'%'}}/>}
