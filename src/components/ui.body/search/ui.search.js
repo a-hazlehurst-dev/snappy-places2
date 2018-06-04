@@ -19,7 +19,7 @@ class LocationSearchInput extends Component{
 
     updateInputValue = (query) =>{
 
-        axios.get('//35.178.8.93:8001/api/v1/place/' + query)
+        axios.get('https://www.snappy-places.com/api/v1/image/api/v1/place/' + query)
         .then(response => { 
             this.setState({options: response.data});
          });
