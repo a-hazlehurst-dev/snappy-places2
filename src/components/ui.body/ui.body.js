@@ -42,7 +42,7 @@ class AppBody extends React.Component{
     }
    
     handleClick(searchQuery){
-        axios.get('//35.178.8.93:8001/api/v1/image/' + searchQuery)
+        axios.get('https://www.snappy-places.com/api/v1/image/' + searchQuery)
         .then(
             (response) => {
                 console.log(response.data.gallery);
