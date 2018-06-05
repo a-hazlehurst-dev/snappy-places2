@@ -45,16 +45,18 @@ class AppBody extends React.Component{
         axios.get('https://www.snappy-places.com/api/v1/image/' + searchQuery)
         .then(
             (response) => {
-                console.log(response.data.gallery);
                 this.setState({images: response.data.gallery});
                 this.setState({markers:response.data.mapMarkers});
                 this.setState({weather:response.data.weather.weatherViewModel});
                 this.setState({center:response.data.mapMarkers[0]});
-                this.setState({hasSearched: true});
+                if(!this.state.setSearchState){
+                    this.setState({hasSearched: true});
+                }
                 this.setState({hasFailedSearch: false})},
             (error) => { 
-                console.log("error occured.");
-                this.setState({hasSearched: true});
+                if(!this.state.setSearchState){
+                    this.setState({hasSearched: true});
+                }
                 this.setState({hasFailedSearch: true});
             }
         )
@@ -148,7 +150,6 @@ class AppBody extends React.Component{
 
     showResults(){
       
-    
             if( !this.state.hasSearched){
                return(this.showOnFirstLoad())
             }
