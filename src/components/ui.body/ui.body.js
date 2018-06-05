@@ -116,7 +116,7 @@ class AppBody extends React.Component{
                      <LocationSearchInput triggerSearch={this.setSearchState.bind(this)} />
                 </div>
                 <div className="row">
-                    <div className={["col-md-12", "spacer-10"].join(' ')}>Here are some Snappy Locations for <strong> {this.state.searchText} </strong></div>
+                    <div className={["col-md-12", "spacer-10"].join(' ')}>Here are some Snappy places for <strong> {this.state.searchText} </strong></div>
                 </div>
                 <div className="row">
                     <div className={["col-md-12", "spacer-10"].join(' ')}>

@@ -49,7 +49,7 @@ class LocationSearchInput extends Component{
                         minLength={2}
                         onSearch={this.updateInputValue}
                         options={this.state.options}
-                        placeholder="Search for a Snappy Location."
+                        placeholder="Search for a Snappy place."
                         onInputChange={this._querySelected}
                         isLoading = {false}
                     />
