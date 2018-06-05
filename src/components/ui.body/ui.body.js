@@ -151,13 +151,13 @@ class AppBody extends React.Component{
     showResults(){
       
             if( !this.state.hasSearched){
-               return(this.showOnFirstLoad())
+               return(this.showOnFirstLoad)
             }
             else if( this.state.hasFailedSearch){
-                return(this.showOnFailedSearch())
+                return(this.showOnFailedSearch)
             }
             else{
-                return(this.showOnSuccessfullSearch())
+                return(this.showOnSuccessfullSearch)
             }
     }
       
