@@ -3,6 +3,7 @@ import {withGoogleMap, GoogleMap, Marker} from 'react-google-maps';
 
 class Map extends Component{
 
+
     renderMarkers(){
         return(this.props.markers.map((marker, index) =>(
             <Marker position={marker} key={index} />)))

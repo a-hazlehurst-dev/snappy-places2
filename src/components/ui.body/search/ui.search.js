@@ -13,7 +13,10 @@ class LocationSearchInput extends Component{
         this.state = {
             searchText: '',
             options: []
+           
         }
+
+        this.handleSearchClick = this.handleSearchClick.bind(this);
 
     }
 
@@ -40,6 +43,11 @@ class LocationSearchInput extends Component{
         this.props.triggerSearch(data);
     }
 
+    handleSearchClick(e){
+        this.props.searchChangeSearch(this.state.searchText)
+    }
+    
+
    render(){
        return (
         <Fragment>
@@ -54,7 +62,7 @@ class LocationSearchInput extends Component{
                         isLoading = {false}
                     />
                 <InputGroupAddon addonType="append">
-                 <Button color="success"  onClick={() => this.Search(this.state.searchText)}>Search</Button>
+                 <Button color="success"  onClick={this.handleSearchClick}>Search</Button>
                 </InputGroupAddon>
             
             </InputGroup>
